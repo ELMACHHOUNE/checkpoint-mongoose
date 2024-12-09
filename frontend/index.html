@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MongoDB + Mongoose</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto mt-10">
+    <h1 class="text-4xl font-bold text-center text-blue-600">MongoDB + Mongoose</h1>
+    <div class="mt-5 p-4 bg-white shadow-lg rounded-lg">
+      <form id="personForm" class="space-y-4">
+        <input
+          type="text"
+          id="name"
+          placeholder="Name"
+          class="w-full p-2 border rounded"
+        />
+        <input
+          type="number"
+          id="age"
+          placeholder="Age"
+          class="w-full p-2 border rounded"
+        />
+        <input
+          type="text"
+          id="foods"
+          placeholder="Favorite Foods (comma-separated)"
+          class="w-full p-2 border rounded"
+        />
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+        >
+          Add Person
+        </button>
+      </form>
+      <div id="result" class="mt-5"></div>
+    </div>
+  </div>
+  <div id="personsList" class="mt-10 p-4 bg-white shadow-lg rounded-lg">
+    <h2 class="text-2xl font-bold text-blue-600 mb-4">All Persons</h2>
+    <ul id="persons" class="space-y-4"></ul>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
